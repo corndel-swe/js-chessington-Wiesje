@@ -1,26 +1,28 @@
 // Make your Counter class here
 class Counter {
+    #count
+
     constructor() {
-        this.count = 0
+        this.#count = 0
     }
 
     increment() {
-        this.count++
+        this.#count++
     }
 
     reset() {
-        this.count = 0
+        this.#count = 0
     }
 
     getCount() {
-        return this.count
+        return this.#count
     }
 }
 
 // Replace `null` with an _instance_ of your counter
 const counterInstance = new Counter()
 counterInstance.increment()
-console.log(counterInstance.count)
+console.log(counterInstance.getCount())
 counterInstance.reset()
 console.log(counterInstance.getCount())
 
